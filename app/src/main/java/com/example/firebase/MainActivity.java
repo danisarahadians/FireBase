@@ -31,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
         lihatbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(LihatBarang.getActIntent(MainActivity.this));
             }
         });
+
+
     }
 }
